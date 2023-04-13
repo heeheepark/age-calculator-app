@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: hsl(0, 0%, 94%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  width: 680px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 50px;
+  border-radius: 24px;
+  border-bottom-right-radius: 150px;
+}
+
+.input-area {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 36px;
+}
+
+.input-area ul {
+  display: flex;
+}
+
+.input-area ul li {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+}
+
+.input-area ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.input-area ul li .title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: hsl(0, 1%, 44%);
+}
+
+.input-area ul li input {
+  width: 126px;
+  height: 55px;
+  font-size: 27px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid hsl(0, 0%, 86%);
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
+.input-area ul li input:hover {
+  cursor: pointer;
+}
+
+.input-area ul li input:focus {
+  outline: 1px solid hsl(259, 100%, 65%);
+}
+
+.input-area ul li .error-blank,
+.input-area ul li .error-value,
+.input-area .error-date {
+  font-size: 11px;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+  display: none;
+}
+
+.input-area .error-date {
+}
+
+.submitBtn {
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+img {
+  background-color: hsl(259, 100%, 65%);
+  padding: 18px;
+  width: 72px;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  right: 0px;
+}
+
+img:hover {
+  background-color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
+.result-area {
+  font-size: 80px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.1;
+}
+
+.result-area div span:first-child {
+  color: hsl(259, 100%, 65%);
+}
