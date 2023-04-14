@@ -10,10 +10,15 @@ let year = document.getElementsByClassName('year')[0];
 
 let title = document.querySelectorAll('.title');
 let errorBlank = document.querySelectorAll('.error-blank');
+let value = document.querySelectorAll('.value')
+console.log(value)
 
-console.log(inputdate[0].value === "")
+console.log(inputdate[0].value)
+  
 function inspector() {
   for(let i = 0; i < inputdate.length; i++) {
+    value[i].innerHTML = inputdate[i].value;
+    
     if (inputdate[i].value === "") {
       title[i].style.color = "hsl(0, 100%, 67%)";
       inputdate[i].style.border = "1px solid hsl(0, 100%, 67%)";

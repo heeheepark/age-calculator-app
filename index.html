@@ -22,19 +22,19 @@
       <ul>
         <li>
           <div class="title">DAY</div>
-          <input class="day" type="text" placeholder="DD">
+          <input class="day" type="text" placeholder="DD"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
           <div class="error-blank">This field is required</div>
           <div class="error-value">Must be a valid day</div>
         </li>
         <li>
           <div class="title">MONTH</div>
-          <input class="month" type="text" placeholder="MM">
+          <input class="month" type="text" placeholder="MM"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
           <div class="error-blank">This field is required</div>
           <div class="error-value">Must be a valid month</div>
         </li>
         <li>
           <div class="title">YEAR</div>
-          <input class="year" type="text" placeholder="YYYY">
+          <input class="year" type="text" placeholder="YYYY"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
           <div class="error-blank">This field is required</div>
           <div class="error-value">Must be in the past</div>
         </li>
@@ -46,15 +46,15 @@
     </div>
     <div class="result-area">
       <div class="result-years">
-        <span class="value-years">- -</span>
+        <span class="value">- -</span>
         <span>years</span>
       </div>
       <div class="result-months">
-        <span class="value-months">- -</span>
+        <span class="value">- -</span>
         <span>months</span>
       </div>
       <div class="result-days">
-        <span class="value-days">- -</span>
+        <span class="value">- -</span>
         <span>days</span>
       </div>
     </div>
